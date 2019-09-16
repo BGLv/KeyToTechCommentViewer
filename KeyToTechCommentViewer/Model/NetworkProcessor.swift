@@ -20,7 +20,7 @@ class NetworkProcessor {
     }
     
     //first value is dictionary that represent json data, second dictionary holds all headers from http response
-    typealias JSONDictionaryHandler = (([String:Any]?,[AnyHashable:Any]?) -> Void)
+    typealias JSONDictionaryHandler = (([[String:Any]]?,[String:Any]?) -> Void)
     
     func downloadJSONFromUrl(completion: @escaping JSONDictionaryHandler){
         let request = URLRequest(url:self.url)
@@ -32,8 +32,8 @@ class NetworkProcessor {
                         case 200:
                             if let data = data{
                                 do {
-                                    let jsonDictionry = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-                                    completion(jsonDictionry as? [String:Any], httpResponse.allHeaderFields)
+                                    let jsonArrayOfDictionry = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                                    completion(jsonArrayOfDictionry as? [[String:Any]], httpResponse.allHeaderFields as? [String:Any])
                                     
                                 }catch let error as NSError{
                                     print("Error processing json data: \(error.localizedDescription)")

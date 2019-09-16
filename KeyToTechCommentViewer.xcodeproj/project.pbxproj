@@ -16,6 +16,8 @@
 		8379AA9E232F9FF7004BC27E /* InputBoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA9D232F9FF7004BC27E /* InputBoundsViewController.swift */; };
 		8379AAA0232FAA9E004BC27E /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA9F232FAA9E004BC27E /* Validators.swift */; };
 		8379AAA2232FBE4F004BC27E /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AAA1232FBE4F004BC27E /* NetworkProcessor.swift */; };
+		8379AAA5232FCB23004BC27E /* JSONPlaceholderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AAA4232FCB23004BC27E /* JSONPlaceholderService.swift */; };
+		8379AAA7232FD41A004BC27E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AAA6232FD41A004BC27E /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		8379AA9D232F9FF7004BC27E /* InputBoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBoundsViewController.swift; sourceTree = "<group>"; };
 		8379AA9F232FAA9E004BC27E /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		8379AAA1232FBE4F004BC27E /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+		8379AAA4232FCB23004BC27E /* JSONPlaceholderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderService.swift; sourceTree = "<group>"; };
+		8379AAA6232FD41A004BC27E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				8379AAA1232FBE4F004BC27E /* NetworkProcessor.swift */,
+				8379AAA4232FCB23004BC27E /* JSONPlaceholderService.swift */,
+				8379AAA6232FD41A004BC27E /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8379AA9E232F9FF7004BC27E /* InputBoundsViewController.swift in Sources */,
+				8379AAA7232FD41A004BC27E /* Comment.swift in Sources */,
+				8379AAA5232FCB23004BC27E /* JSONPlaceholderService.swift in Sources */,
 				8379AA70232F9EFA004BC27E /* AppDelegate.swift in Sources */,
 				8379AAA0232FAA9E004BC27E /* Validators.swift in Sources */,
 				8379AAA2232FBE4F004BC27E /* NetworkProcessor.swift in Sources */,
