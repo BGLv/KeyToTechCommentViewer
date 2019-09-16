@@ -15,6 +15,7 @@
 		8379AA90232F9EFD004BC27E /* KeyToTechCommentViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA8F232F9EFD004BC27E /* KeyToTechCommentViewerUITests.swift */; };
 		8379AA9E232F9FF7004BC27E /* InputBoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA9D232F9FF7004BC27E /* InputBoundsViewController.swift */; };
 		8379AAA0232FAA9E004BC27E /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA9F232FAA9E004BC27E /* Validators.swift */; };
+		8379AAA2232FBE4F004BC27E /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AAA1232FBE4F004BC27E /* NetworkProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8379AA91232F9EFD004BC27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8379AA9D232F9FF7004BC27E /* InputBoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBoundsViewController.swift; sourceTree = "<group>"; };
 		8379AA9F232FAA9E004BC27E /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		8379AAA1232FBE4F004BC27E /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				8379AA78232F9EFD004BC27E /* LaunchScreen.storyboard */,
 				8379AA7B232F9EFD004BC27E /* Info.plist */,
 				8379AA9F232FAA9E004BC27E /* Validators.swift */,
+				8379AAA3232FBE58004BC27E /* Model */,
 			);
 			path = KeyToTechCommentViewer;
 			sourceTree = "<group>";
@@ -126,6 +129,14 @@
 				8379AA91232F9EFD004BC27E /* Info.plist */,
 			);
 			path = KeyToTechCommentViewerUITests;
+			sourceTree = "<group>";
+		};
+		8379AAA3232FBE58004BC27E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8379AAA1232FBE4F004BC27E /* NetworkProcessor.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 				8379AA9E232F9FF7004BC27E /* InputBoundsViewController.swift in Sources */,
 				8379AA70232F9EFA004BC27E /* AppDelegate.swift in Sources */,
 				8379AAA0232FAA9E004BC27E /* Validators.swift in Sources */,
+				8379AAA2232FBE4F004BC27E /* NetworkProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
