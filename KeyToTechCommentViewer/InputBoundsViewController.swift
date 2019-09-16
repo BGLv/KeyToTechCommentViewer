@@ -20,7 +20,27 @@ class InputBoundsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    //validate user imput for bounds and perform segue to comments table view
+    //validate user imput for bounds when user change value of text field
+    @IBAction func validateUserEnterInTextFields(_ sender: Any){
+        if let boundTextField = sender as? UITextField{
+            do{
+                boundTextField.text = try boundTextField.validateText(validationType: ValidatorType.commentIdBound)
+            } catch (let error){
+                showErrorAlert(for: (error as! ValidationError).message)
+                boundTextField.text = ""
+            }
+        }
+    }
+    
+    //show alert when some error happens
+    func showErrorAlert(for message: String){
+        let alertC = UIAlertController(title: "Error !", message: message, preferredStyle: .alert)
+        let closeAlertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertC.addAction(closeAlertAction)
+        self.present(alertC, animated: true, completion: nil)
+    }
+    
+    // perform segue to comments table view
     @IBAction func showCommentsButtonPressed(_ sender: Any) {
     }
     
@@ -35,4 +55,12 @@ class InputBoundsViewController: UIViewController {
     }
     */
 
+}
+
+
+extension UITextField {
+    func validateText(validationType: ValidatorType) throws -> String {
+        let validator = ValidatorFactory.validatorFor(type: validationType)
+        return try validator.validated(self.text!)
+    }
 }

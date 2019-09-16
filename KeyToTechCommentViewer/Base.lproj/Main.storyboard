@@ -26,6 +26,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="validateUserEnterInTextFields:" destination="l9f-hy-qug" eventType="editingChanged" id="Jeo-L3-5Ku"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input lower bound" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-WV-A2D">
                                 <rect key="frame" x="16" y="272" width="343" height="35.5"/>
@@ -35,6 +38,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="validateUserEnterInTextFields:" destination="l9f-hy-qug" eventType="editingChanged" id="hc4-7y-KhQ"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEs-P9-EY0">
                                 <rect key="frame" x="16" y="359.5" width="343" height="35.5"/>
@@ -63,7 +69,6 @@
                         <viewLayoutGuide key="safeArea" id="FDX-LH-eUF"/>
                     </view>
                     <connections>
-                        <outlet property="loverBoundTextField" destination="F2T-WV-A2D" id="54Z-1g-OFt"/>
                         <outlet property="lowerBoundTextField" destination="F2T-WV-A2D" id="cbd-dJ-j6E"/>
                         <outlet property="upperBoundTextField" destination="PHg-Dr-aci" id="L5B-me-xmf"/>
                     </connections>
