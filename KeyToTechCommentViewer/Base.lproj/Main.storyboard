@@ -1,24 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l9f-hy-qug">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Input Bounds View Controller-->
+        <scene sceneID="jqF-QV-ssv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="l9f-hy-qug" customClass="InputBoundsViewController" customModule="KeyToTechCommentViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xQr-gT-t6n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input upper bound" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="PHg-Dr-aci">
+                                <rect key="frame" x="16" y="315.5" width="343" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PHg-Dr-aci" secondAttribute="height" multiplier="48:5" id="IM3-hw-lzh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input lower bound" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-WV-A2D">
+                                <rect key="frame" x="16" y="272" width="343" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F2T-WV-A2D" secondAttribute="height" multiplier="48:5" id="XoJ-mz-rd1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEs-P9-EY0">
+                                <rect key="frame" x="16" y="359.5" width="343" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FEs-P9-EY0" secondAttribute="height" multiplier="48:5" id="weX-4x-3Aw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Show comments"/>
+                                <connections>
+                                    <action selector="showCommentsButtonPressed:" destination="l9f-hy-qug" eventType="touchUpInside" id="Ykr-fK-y74"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FDX-LH-eUF" firstAttribute="trailing" secondItem="F2T-WV-A2D" secondAttribute="trailing" constant="16" id="BSi-oH-Ofn"/>
+                            <constraint firstItem="PHg-Dr-aci" firstAttribute="centerY" secondItem="xQr-gT-t6n" secondAttribute="centerY" id="Pfs-m8-u1S"/>
+                            <constraint firstItem="PHg-Dr-aci" firstAttribute="centerX" secondItem="xQr-gT-t6n" secondAttribute="centerX" id="QDA-k2-6Cb"/>
+                            <constraint firstItem="PHg-Dr-aci" firstAttribute="leading" secondItem="FDX-LH-eUF" secondAttribute="leading" constant="16" id="Rxf-eA-YgC"/>
+                            <constraint firstItem="FDX-LH-eUF" firstAttribute="trailing" secondItem="FEs-P9-EY0" secondAttribute="trailing" constant="16" id="dEs-SF-ko1"/>
+                            <constraint firstItem="FEs-P9-EY0" firstAttribute="top" secondItem="PHg-Dr-aci" secondAttribute="bottom" constant="8" symbolic="YES" id="gcT-ZX-0cB"/>
+                            <constraint firstItem="F2T-WV-A2D" firstAttribute="leading" secondItem="FDX-LH-eUF" secondAttribute="leading" constant="16" id="had-3I-qCb"/>
+                            <constraint firstItem="FEs-P9-EY0" firstAttribute="leading" secondItem="FDX-LH-eUF" secondAttribute="leading" constant="16" id="huL-il-gRG"/>
+                            <constraint firstItem="PHg-Dr-aci" firstAttribute="top" secondItem="F2T-WV-A2D" secondAttribute="bottom" constant="8" symbolic="YES" id="vth-h2-bmA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FDX-LH-eUF"/>
                     </view>
+                    <connections>
+                        <outlet property="loverBoundTextField" destination="F2T-WV-A2D" id="54Z-1g-OFt"/>
+                        <outlet property="lowerBoundTextField" destination="F2T-WV-A2D" id="cbd-dJ-j6E"/>
+                        <outlet property="upperBoundTextField" destination="PHg-Dr-aci" id="L5B-me-xmf"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXW-D6-QVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>

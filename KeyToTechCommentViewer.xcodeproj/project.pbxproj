@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8379AA70232F9EFA004BC27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA6F232F9EFA004BC27E /* AppDelegate.swift */; };
-		8379AA72232F9EFA004BC27E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA71232F9EFA004BC27E /* ViewController.swift */; };
 		8379AA75232F9EFA004BC27E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8379AA73232F9EFA004BC27E /* Main.storyboard */; };
 		8379AA77232F9EFD004BC27E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8379AA76232F9EFD004BC27E /* Assets.xcassets */; };
 		8379AA7A232F9EFD004BC27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8379AA78232F9EFD004BC27E /* LaunchScreen.storyboard */; };
 		8379AA85232F9EFD004BC27E /* KeyToTechCommentViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA84232F9EFD004BC27E /* KeyToTechCommentViewerTests.swift */; };
 		8379AA90232F9EFD004BC27E /* KeyToTechCommentViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA8F232F9EFD004BC27E /* KeyToTechCommentViewerUITests.swift */; };
+		8379AA9E232F9FF7004BC27E /* InputBoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379AA9D232F9FF7004BC27E /* InputBoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		8379AA6C232F9EFA004BC27E /* KeyToTechCommentViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyToTechCommentViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8379AA6F232F9EFA004BC27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8379AA71232F9EFA004BC27E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8379AA74232F9EFA004BC27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8379AA76232F9EFD004BC27E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8379AA79232F9EFD004BC27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		8379AA8B232F9EFD004BC27E /* KeyToTechCommentViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyToTechCommentViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8379AA8F232F9EFD004BC27E /* KeyToTechCommentViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyToTechCommentViewerUITests.swift; sourceTree = "<group>"; };
 		8379AA91232F9EFD004BC27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8379AA9D232F9FF7004BC27E /* InputBoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				8379AA6F232F9EFA004BC27E /* AppDelegate.swift */,
-				8379AA71232F9EFA004BC27E /* ViewController.swift */,
 				8379AA73232F9EFA004BC27E /* Main.storyboard */,
 				8379AA76232F9EFD004BC27E /* Assets.xcassets */,
 				8379AA78232F9EFD004BC27E /* LaunchScreen.storyboard */,
 				8379AA7B232F9EFD004BC27E /* Info.plist */,
+				8379AA9D232F9FF7004BC27E /* InputBoundsViewController.swift */,
 			);
 			path = KeyToTechCommentViewer;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8379AA72232F9EFA004BC27E /* ViewController.swift in Sources */,
+				8379AA9E232F9FF7004BC27E /* InputBoundsViewController.swift in Sources */,
 				8379AA70232F9EFA004BC27E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
