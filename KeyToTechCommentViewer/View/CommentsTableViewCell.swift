@@ -20,6 +20,8 @@ class CommentsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var bodyLabel: UILabel!
     
+    var id: Int?
+    
     var comment: Comment?{
         didSet{
             updateUI()

@@ -16,6 +16,8 @@ class InputBoundsViewController: UIViewController {
     @IBOutlet weak var showCommentsButton: UIButton!
     
    
+    let idOffset = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -87,8 +89,8 @@ class InputBoundsViewController: UIViewController {
             if let commentsTVC = segue.destination as? CommentsTableViewController{
                 if let lowerBoundInt = Int(lowerBoundTextField.text ?? ""), let upperBoundInt = Int(upperBoundTextField.text ?? ""){
                     //init TVC with user input data
-                    commentsTVC.startCommentId = lowerBoundInt
-                    commentsTVC.totalLimit = upperBoundInt - lowerBoundInt
+                    commentsTVC.startCommentId = lowerBoundInt - idOffset
+                    commentsTVC.totalLimit = upperBoundInt - lowerBoundInt + idOffset
                 }
             }
         }

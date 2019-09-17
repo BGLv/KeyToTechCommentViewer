@@ -37,7 +37,7 @@ struct CommentIdBoundValidator: ValidationConvertible {
     func validated(_ value: String) throws -> String {
         guard value.count > 0 else {throw ValidationError("Bound is required")}
         guard let bound = Int(value) else {throw ValidationError("Bound must be a number!")}
-        guard bound >= 0 else {throw ValidationError("Bound must be positive number!")}
+        guard bound > 0 else {throw ValidationError("Bound must be greater than 0!")}
         
         return value
     }
