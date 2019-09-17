@@ -52,9 +52,9 @@ class CommentsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if 0 == indexPath.section{
             let cell = tableView.dequeueReusableCell(withIdentifier: "commentsTableViewCell", for: indexPath) as! CommentsTableViewCell
-            if let commentIdInt = self.commentsInsideTable?[indexPath.row].id{
-                cell.idLabel.text = String(commentIdInt)
-            }
+            
+            cell.comment = self.commentsInsideTable?[indexPath.row]
+           
             return cell
             
         } else {

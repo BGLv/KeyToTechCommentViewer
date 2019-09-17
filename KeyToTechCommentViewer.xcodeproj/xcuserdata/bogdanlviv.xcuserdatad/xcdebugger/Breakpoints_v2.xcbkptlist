@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Controller/InputBoundsViewController.swift"
-            timestampString = "590372687.191648"
+            timestampString = "590403975.284637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Controller/CommentsTableViewController.swift"
-            timestampString = "590372687.1917599"
+            timestampString = "590403975.284736"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Controller/CommentsTableViewController.swift"
-            timestampString = "590372687.192515"
+            timestampString = "590403975.284861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Controller/CommentsTableViewController.swift"
-            timestampString = "590372687.193064"
+            timestampString = "590403975.2849801"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Model/JSONPlaceholderService.swift"
-            timestampString = "590372687.193629"
+            timestampString = "590403975.2851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Model/NetworkProcessor.swift"
-            timestampString = "590372687.193719"
+            timestampString = "590403975.285182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Controller/CommentsTableViewController.swift"
-            timestampString = "590372687.193827"
+            timestampString = "590403975.28528"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Model/NetworkProcessor.swift"
-            timestampString = "590372687.194345"
+            timestampString = "590403975.285387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -166,11 +166,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Controller/CommentsTableViewController.swift"
-            timestampString = "590372687.1944489"
+            timestampString = "590403975.285478"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -182,11 +182,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Controller/CommentsTableViewController.swift"
-            timestampString = "590372687.1949461"
+            timestampString = "590403975.2855771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
@@ -202,12 +202,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyToTechCommentViewer/Controller/CommentsTableViewController.swift"
-            timestampString = "590372687.195449"
+            timestampString = "590403975.285674"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
             endingLineNumber = "71"
             landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KeyToTechCommentViewer/View/CommentsTableViewCell.swift"
+            timestampString = "590403975.2857569"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "makePrefixBold(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

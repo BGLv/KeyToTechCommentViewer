@@ -58,7 +58,15 @@ class InputBoundsViewController: UIViewController {
                     showErrorAlert(for: "Upper bound must be greater than lover!")
                     upperBoundTextField.text=""
                     disableShowCommentsButton()
-                }else{
+                }
+                    
+                if 0 >= upperBoundInt {
+                    showErrorAlert(for: "Upper bound must be greater than 0!")
+                    upperBoundTextField.text=""
+                    disableShowCommentsButton()
+                }
+                
+                if 0 < upperBoundInt && loverBoundInt < upperBoundInt {
                     enableShowCommentsButton()
                 }
             }
