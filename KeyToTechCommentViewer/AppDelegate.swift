@@ -15,17 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        /*let networkProcessor = NetworkProcessor(url: URL(string: "https://jsonplaceholder.typicode.com/comments?_start=00&_limit=500")!)
-        networkProcessor.downloadJSONFromUrl(completion: {
-            (arg1,arg2) in
-            print("\(arg1 as? [[String:String]])")
-        })*/
         
-        /*let service = JSONPlaceholderService()
-        service.getCommentsStarted(with: nil, limitedBy: nil, completion: {
-            (arg1,arg2) -> Void in
-        })*/
         return true
     }
 

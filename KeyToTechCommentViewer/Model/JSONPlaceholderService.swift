@@ -20,7 +20,8 @@ extension JSONPlaceholderService{
             //array of comments
             var comments:[Comment] = []
             //number of all avaliable comments
-            let totalComments = HTTPHeadersDictionary?["X-Content-Count"] as? Int
+            let totalCommentsStr = HTTPHeadersDictionary?["x-total-count"] as? String
+            let totalComments = Int(totalCommentsStr ?? "")
                 if let arrayOfCommentDict = jsonArrayOfDictionary{
                     for commentDict in arrayOfCommentDict{
                         if let postId = commentDict["postId"] as? Int,
@@ -53,6 +54,8 @@ class JSONPlaceholderService {
         components.scheme = JSONPlaceholderAPI.scheme
         components.host = JSONPlaceholderAPI.host
         components.path = JSONPlaceholderAPI.pathToAllComments
+        
+        components.queryItems = []
         
         if let start = start {
             components.queryItems?.append(URLQueryItem(name: "_start", value: "\(start)"))
